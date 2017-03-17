@@ -156,6 +156,8 @@ The Windows agent is now digitally signed.
 * [Improvement] TokuMX: Skip dbs that aren't accessible. See [#3093][]. (Thanks [@pbrisbin][])
 * [Improvement] Yarn: Add configurable application tags. See [#3041][], [integrations-core-261](https://github.com/DataDog/integrations-core/pull/261)
 * [Improvement] Zookeeper: Include user specified tags. See [#3078][]. (Thanks [@arzarif][])
+* [Improvement] Trace Agent: Watchdog restarts trace agent if it consumes too much memory or opens too many network connections. [trace-trace-agent-182](https://github.com/DataDog/datadog-trace-agent/pull/182)
+* [Improvement] Trace Agent: Reduce sampler log verbosity and expose internal state with Go expvar. [datadog-trace-agent-248](https://github.com/DataDog/datadog-trace-agent/pull/248)
 
 * [Bugfix] Disk: Tag metrics with filesystem tag key instead of filesystem itself. See [integrations-core-252](https://github.com/DataDog/integrations-core/pull/252)
 * [Bugfix] Docker: Fix whitelist pattern matching. See [#3048][]
@@ -178,6 +180,7 @@ The Windows agent is now digitally signed.
 * [Bugfix] Spark: Fix event source name. See [#3193][]
 * [Bugfix] SQLServer: Stops passwords from leaking into logs. See [#3053][]
 * [Bugfix] SQLServer: Collect metric list if SQLServer is not up during check init. See [#3067][]
+* [Bugfix] Trace Agent: Now shells out to dd-agent to retrieve hostname. [datadog-trace-agent-242](https://github.com/DataDog/datadog-trace-agent/pull/242)
 
 * [Deprecate] ActiveMQ: Remove old JMX config file. See [#3141][]
 
